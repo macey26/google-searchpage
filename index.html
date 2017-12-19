@@ -17,7 +17,6 @@
 
 }
 
-
 div{
 	display: block;
 }
@@ -25,8 +24,10 @@ div{
 header{
 	
 	width: 100%;
+	height:120px;
 	font-size:13px;
 	padding-top: 10px;
+	border-bottom: 1px solid #e4e4e4;
 	
 
 }
@@ -34,7 +35,7 @@ header{
 nav{
 	position: relative;
 	top: 10px;
-	left: 80%;
+	left: 10px;
 	display: inline-block;
 }
 
@@ -53,21 +54,19 @@ nav a:hover {
     text-decoration-color: initial;
 }
 
+#right-nav{
+    position: relative;
+    top: -90px;
+    left:1000px;
 
-
-#gmail{
-	margin:5px 0 5px 0;
-	padding: 5px 3px 5px 3px;
-	position: relative;
-	top:-25px;
 }
 
-#images{
-	margin:5px 0 5px 0;
-	padding:5px 3px 5px 3px;
-	position: relative;
-	top:-25px;
+#little-logo{
+    position: relative;
+    left:10px;
+
 }
+
 
 #apps{
 	margin:0px;
@@ -87,20 +86,12 @@ nav a:hover {
 	top:-8px;
 }
 
-#logo{
-    margin:-2px;
-	position: relative;
-	top:120px;
-	left: 515px;
-
-}
-
 #box{
 	position: relative;
-	top:140px;
-	left: 350px;
+	top:-60px;
+	left: 155px;
 	width: 632px;
-	height: 49px;
+	height: 44px;
 	border: 1px solid lightgrey;
 	box-shadow: 2px 2px 5px grey;
 	min-width: 484px;
@@ -115,14 +106,16 @@ input{
 }
 
 #mic{
-	float: right;
-	margin: 5px 0 0 5px;
+	
+	position: relative;
+	left: 25px;
 
 }
 
 #search{
+	height: 43px;
   width: 448px;
-  height: 44px;
+  height: 43px;
   font-size: 25px;
   
 }
@@ -138,61 +131,6 @@ textarea:focus,{
     outline: none;
 }
 
-#googleSearch{
-    height: 36px;
-    line-height: 27px;
-    background-color: #f2f2f2;
-    border: 1px solid #f2f2f2;
-    position: relative;
-    top: 160px ;
-    left: 515px;
-    border-radius: 2px;
-    color: #757575;
-    cursor: default;
-    font-family: arial,sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    margin: 11px 4px;
-    min-width: 54px;
-    padding: 0 16px;
-    text-align: center;
-
-}
-
-#feelLucky{
-	height: 36px;
-    line-height: 27px;
-    background-color: #f2f2f2;
-    border: 1px solid #f2f2f2;
-    position: relative;
-    top: 160px ; 
-    left: 515px;
-    border-radius: 2px;
-    color: #757575;
-    cursor: default;
-    font-family: arial,sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    margin: 11px 4px;
-    min-width: 54px;
-    padding: 0 16px;
-    text-align: center;
-}
-
-input:hover[type="submit"] {
-	background-image: -webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#f1f1f1));
-    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-    background-color: #f8f8f8;
-    background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
-    background-image: -o-linear-gradient(top,#f8f8f8,#f1f1f1);
-    border: 2px solid #c6c6c6;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
-    color: black;
-    font-weight: bold;
-
-
-}
 footer{
     width: 980px;
     
@@ -276,32 +214,37 @@ footer a:hover {
 <div class="wrapper">
 
 <header>
+
+
   <nav>
-  	<a href="https://mail.google.com/mail/?tab=wm" id="gmail">Gmail</a>
-  	<a href="https://www.google.com.au/imghp?hl=en&tab=wi" id="images">Images</a>
+
+  <img src="images/little-logo.png" id="little-logo">
+
+<div id="box"> 
+  	<form>
+     <input type="text" name="search" title="search" id="search" >
+     <input type="image" src="images/mic.png" alt="Submit" id="mic">
+      <input type="image" src="images/magnify-glass.png" alt="Submit" id="magnify-glass">
+    </form>
+  	</div>
+  	<div id="right-nav">
+
    
   	<a href="https://www.google.com.au/intl/en/options/" id="apps"><img src="images/apps.png"></a>
   	<a href="#" id="bell"><img src="images/bell.png"></a>
   	<a href="#" id="avatar"><img src="images/avatar.png"></a>
-    
+    </div>
+
   </nav>
 
   
 </header>
 <section>
-  	<img src="images/googlelogo_color.png" id="logo">
+  
 
   <div id="searchBox">
-  	<div id="box"> 
-  	<form>
-     <input type="text" name="search" title="search" id="search" >
-     <input type="image" src="images/mic.png" alt="Submit" id="mic">
-    </form>
-  	</div>
-  	 <form>
-  	 	<input value="Google Search" type="submit" name="Google search" aria-label="Google Search" id="googleSearch" class="over">
-  	 	<input value="I'm Feeling Lucky" type="submit" name="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" id="feelLucky" class="over">
-  	 </form>
+  	
+  	
   </div>
 
 
