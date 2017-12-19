@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Google Search page | The Odin Project</title>
+
+	<style type="text/css">
+		
+		body{
+  background-color: #fff;
+	color: #222;
+	font-family: arial, sans-serif;
+	margin: 0;
+	padding: 0;
+
+}
+
+
+div{
+	display: block;
+}
+	
+header{
+	
+	width: 100%;
+	font-size:13px;
+	padding-top: 10px;
+	
+
+}
+
+nav{
+	position: relative;
+	top: 10px;
+	left: 80%;
+	display: inline-block;
+}
+
+
+nav a:link {
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    opacity: .85;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+
+
+
+#gmail{
+	margin:5px 0 5px 0;
+	padding: 5px 3px 5px 3px;
+	position: relative;
+	top:-25px;
+}
+
+#images{
+	margin:5px 0 5px 0;
+	padding:5px 3px 5px 3px;
+	position: relative;
+	top:-25px;
+}
+
+#apps{
+	margin:0px;
+	position: relative;
+	top:-7px;
+}
+
+#bell{
+	margin:-2px;
+	position: relative;
+	top:-7px;
+}
+
+#avatar{
+	margin:-2px;
+	position: relative;
+	top:-8px;
+}
+
+#logo{
+    margin:-2px;
+	position: relative;
+	top:120px;
+	left: 515px;
+
+}
+
+#box{
+	position: relative;
+	top:140px;
+	left: 350px;
+	width: 632px;
+	height: 49px;
+	border: 1px solid lightgrey;
+	box-shadow: 2px 2px 5px grey;
+	min-width: 484px;
+}
+
+input{
+	-webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: auto;
+    border: none;
+}
+
+#mic{
+	float: right;
+	margin: 5px 0 0 5px;
+
+}
+
+#search{
+  width: 448px;
+  height: 44px;
+  font-size: 25px;
+  
+}
+
+#searchBox{
+	position: absolute;
+    top: 145px;
+    left: -20px;
+	width:980px;
+	height: 129px;
+}
+textarea:focus,{
+    outline: none;
+}
+
+#googleSearch{
+    height: 36px;
+    line-height: 27px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    position: relative;
+    top: 160px ;
+    left: 515px;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+
+}
+
+#feelLucky{
+	height: 36px;
+    line-height: 27px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    position: relative;
+    top: 160px ; 
+    left: 515px;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+input:hover[type="submit"] {
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f8f8;
+    background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-image: -o-linear-gradient(top,#f8f8f8,#f1f1f1);
+    border: 2px solid #c6c6c6;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+    color: black;
+    font-weight: bold;
+
+
+}
+footer{
+    width: 980px;
+    
+
+}
+
+#top-bar{
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 40px;
+  width: 132.5%;
+  margin:0 auto;
+  position: relative;
+  top:422px;
+
+}
+
+#bottom-bar{
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 40px;
+  width: 132.5%;
+  margin:0 auto;
+  position: relative;
+  top:422px;
+  font-size: 15px;
+
+}
+
+.foot-text{
+
+	margin-left: 30px;
+}
+
+.bottom-links{
+  margin-right: 20px;
+  
+
+}
+
+.bottom-links a:link{
+    color: #666;
+    text-decoration: none;
+}
+
+
+.bottom-links a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+
+footer a:link {
+    color: #666;
+    text-decoration: none;
+}
+
+
+footer a:hover {
+    opacity: .85;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+
+.bottom-right{
+	position: relative;
+	left: 800px;
+
+}
+
+	</style>
+
+
+
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<header>
+  <nav>
+  	<a href="https://mail.google.com/mail/?tab=wm" id="gmail">Gmail</a>
+  	<a href="https://www.google.com.au/imghp?hl=en&tab=wi" id="images">Images</a>
+   
+  	<a href="https://www.google.com.au/intl/en/options/" id="apps"><img src="images/apps.png"></a>
+  	<a href="#" id="bell"><img src="images/bell.png"></a>
+  	<a href="#" id="avatar"><img src="images/avatar.png"></a>
+    
+  </nav>
+
+  
+</header>
+<section>
+  	<img src="images/googlelogo_color.png" id="logo">
+
+  <div id="searchBox">
+  	<div id="box"> 
+  	<form>
+     <input type="text" name="search" title="search" id="search" >
+     <input type="image" src="images/mic.png" alt="Submit" id="mic">
+    </form>
+  	</div>
+  	 <form>
+  	 	<input value="Google Search" type="submit" name="Google search" aria-label="Google Search" id="googleSearch" class="over">
+  	 	<input value="I'm Feeling Lucky" type="submit" name="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" id="feelLucky" class="over">
+  	 </form>
+  </div>
+
+
+  </section>
+
+  <footer>
+  <div id="top-bar">
+  	<span class="foot-text">Australia</span>
+  </div>
+  <div id="bottom-bar">
+  	<span class="foot-text">
+
+  	<a class="bottom-links" href="/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiW1vXdmpLYAhVLybwKHd2_CKoQkdQCCAs&url=https%3A%2F%2Fwww.google.com.au%2Fintl%2Fen_au%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw05oraazITREqwqthkZ8Bgf" >Advertising</a>
+
+  	 <a class="bottom-links" href="https://www.google.com.au/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+
+  	 <a class="bottom-links" href="https://www.google.com.au/intl/en_au/about/?utm_source=google.com&utm_medium=referral&utm_campaign=hp-footer&fg=1"> About</a>
+
+  	 </span>
+
+  	 <span class="bottom-right"> 
+
+  	 	<a class="bottom-links" href="//www.google.com.au/intl/en_au/policies/privacy/?fg=1">Privacy</a>
+           
+  	 	<a class="bottom-links" href="//www.google.com.au/intl/en_au/policies/terms/?fg=1">Terms</a>
+
+  	 	<a class="bottom-links" href="//www.google.com.au/intl/en_au/policies/privacy/?fg=1"> Settings</a>
+
+  	 </span>
+  </div>
+  	
+  </footer>
+
+
+</div>
+
+</body>
+
+</html>
