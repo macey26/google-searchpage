@@ -23,7 +23,7 @@ div{
 	
 header{
 	
-	width: 100%;
+	width: 1300px;
 	height:120px;
 	font-size:13px;
 	padding-top: 10px;
@@ -56,14 +56,15 @@ nav a:hover {
 
 #right-nav{
     position: relative;
-    top: -90px;
-    left:1000px;
+    top: -95px;
+    left:1118px;
 
 }
 
 #little-logo{
     position: relative;
-    left:10px;
+    top:-10px;
+    left:-5px;
 
 }
 
@@ -89,7 +90,7 @@ nav a:hover {
 #box{
 	position: relative;
 	top:-60px;
-	left: 155px;
+	left: 140px;
 	width: 632px;
 	height: 44px;
 	border: 1px solid lightgrey;
@@ -108,25 +109,35 @@ input{
 #mic{
 	
 	position: relative;
-	left: 25px;
+	left: 85px;
 
 }
 
+#magnify-glass{
+	position: relative;
+	left:85px; 
+}
+
 #search{
-	height: 43px;
+  position: relative;
+  top:-8px;
   width: 448px;
-  height: 43px;
+  height: 42px;
   font-size: 25px;
   
 }
 
-#searchBox{
-	position: absolute;
-    top: 145px;
-    left: -20px;
-	width:980px;
-	height: 129px;
+ul{
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
 }
+
+li a {
+	display: block;
+	width: 60px;
+}
+
 textarea:focus,{
     outline: none;
 }
@@ -198,7 +209,7 @@ footer a:hover {
 
 .bottom-right{
 	position: relative;
-	left: 800px;
+	left: 700px;
 
 }
 
@@ -227,13 +238,29 @@ footer a:hover {
       <input type="image" src="images/magnify-glass.png" alt="Submit" id="magnify-glass">
     </form>
   	</div>
+
   	<div id="right-nav">
 
    
-  	<a href="https://www.google.com.au/intl/en/options/" id="apps"><img src="images/apps.png"></a>
-  	<a href="#" id="bell"><img src="images/bell.png"></a>
-  	<a href="#" id="avatar"><img src="images/avatar.png"></a>
-    </div>
+  	  <a href="https://www.google.com.au/intl/en/options/" id="apps"><img src="images/apps.png"></a>
+  	  <a href="#" id="bell"><img src="images/bell.png"></a>
+  	  <a href="#" id="avatar"><img src="images/avatar.png"></a>
+      </div>
+
+    <div id="lower-nav">
+    	<ul>
+    		<li> <a href="#">All</a></li>
+    		<li> <a href="#">Videos</a></li>
+    		<li> <a href="#">Shopping</a></li>
+    		<li> <a href="#">News</a></li>
+    		<li> <a href="#">Maps</a></li>
+    		<li> <a href="#">More</a></li>
+    		<li> <a href="#">Settings</a></li>
+    		<li><input type="Submit" name="tools"></li>
+    	</ul>
+
+
+    </div>  
 
   </nav>
 
@@ -241,11 +268,6 @@ footer a:hover {
 </header>
 <section>
   
-
-  <div id="searchBox">
-  	
-  	
-  </div>
 
 
   </section>
