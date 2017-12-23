@@ -54,6 +54,13 @@ nav a:hover {
     text-decoration-color: initial;
 }
 
+#lower-nav{
+   position: relative;
+   top: -71px;
+   left:140px;
+
+}
+
 #right-nav{
     position: relative;
     top: -95px;
@@ -133,10 +140,61 @@ ul{
     padding: 0;
 }
 
-li a {
-	display: block;
+li {
+	display: inline;
 	width: 60px;
+	}
+
+li a:link {
+    color: #666;
+    text-decoration: none;
 }
+
+
+li a:hover {
+    opacity: .85;
+    text-decoration: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+
+#tools:hover{
+    border: 1px solid #777;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: -1px;
+    padding: 4px 15px;
+    box-shadow: 0 3px 7px 0 rgba(0,0,0,0.24), 0 5px 10px 0 rgba(0,0,0,0.19);
+     background: linear-gradient(#e4e4e4, #f0f0f0)
+}
+
+
+#settings{
+    margin-left: 80px;
+}
+
+#tools{
+
+
+}
+
+.nav-tabs{
+    height: 15px;
+    line-height: 15px;
+    padding: 28px 16px 12px;
+
+}
+
+#active{
+
+	border-bottom: 3px solid #4285f4;
+	color: #4285f4;
+    font-weight: bold;
+    height: 15px;
+    line-height: 15px;
+    padding: 28px 16px 12px;
+}
+
 
 textarea:focus,{
     outline: none;
@@ -247,16 +305,26 @@ footer a:hover {
   	  <a href="#" id="avatar"><img src="images/avatar.png"></a>
       </div>
 
-    <div id="lower-nav">
+    <div id="lower-nav"> 
+
     	<ul>
-    		<li> <a href="#">All</a></li>
-    		<li> <a href="#">Videos</a></li>
-    		<li> <a href="#">Shopping</a></li>
-    		<li> <a href="#">News</a></li>
-    		<li> <a href="#">Maps</a></li>
-    		<li> <a href="#">More</a></li>
-    		<li> <a href="#">Settings</a></li>
-    		<li><input type="Submit" name="tools"></li>
+
+    		<li> <a id="active" href="#">All</a></li>
+
+    		<li> <a class="nav-tabs" href="/search?q=build+this+webpage&dcr=0&source=lnms&tbm=vid&sa=X&ved=0ahUKEwjEsof5m5fYAhXLoZQKHTLAAu0Q_AUICigB">Videos</a></li>
+
+    		<li> <a  class="nav-tabs" href="/search?q=build+this+webpage&dcr=0&source=lnms&tbm=shop&sa=X&ved=0ahUKEwjEsof5m5fYAhXLoZQKHTLAAu0Q_AUICygC">Shopping</a></li>
+
+    		<li> <a  class="nav-tabs" href="/search?q=build+this+webpage&dcr=0&source=lnms&tbm=nws&sa=X&ved=0ahUKEwjEsof5m5fYAhXLoZQKHTLAAu0Q_AUIDCgD">News</a></li>
+
+    		<li> <a class="nav-tabs"  href="https://maps.google.com.au/maps?q=build+this+webpage&gws_rd=cr&dcr=0&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjEsof5m5fYAhXLoZQKHTLAAu0Q_AUIDSgE">Maps</a></li>
+
+    		<li> <a class="nav-tabs"  href="#">More</a></li>
+
+    		<li> <a id="settings" class="nav-tabs" href="#">Settings</a></li>
+
+    		<li> <a class="nav-tabs"  id="tools" href="#" >Tools</a></li>
+
     	</ul>
 
 
