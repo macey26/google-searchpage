@@ -6,434 +6,29 @@
 
 	<title>Google Search page | The Odin Project</title>
 
-	<style type="text/css">
-		
-		body{
-     background-color: #fff;
-	color: #222;
-	font-family: arial, sans-serif;
-	margin: 0;
-	padding: 0;
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	
-}
-
-h3{
-    font-weight: normal;
-}
-
-div{
-	display: block;
-}
-	
-header{
-	
-	width: 1300px;
-	height:120px;
-	font-size:13px;
-	padding-top: 10px;
-	border-bottom: 1px solid #e4e4e4;
-	
-
-}
-
-nav{
-	position: relative;
-	top: 10px;
-	left: 10px;
-	display: inline-block;
-}
-
-
-nav a:link {
-    color: rgba(0,0,0,0.87);
-    text-decoration: none;
-}
-
-
-nav a:hover {
-    opacity: .85;
-    text-decoration: underline;
-    text-decoration-line: underline;
-    text-decoration-style: initial;
-    text-decoration-color: initial;
-}
-
-#lower-nav{
-   position: relative;
-   top: -71px;
-   left:140px;
-
-}
-
-#right-nav{
-    position: relative;
-    top: -95px;
-    left:1118px;
-
-}
-
-#little-logo{
-    position: relative;
-    top:-10px;
-    left:-5px;
-
-}
-
-
-#apps{
-	margin:0px;
-	position: relative;
-	top:-7px;
-}
-
-#bell{
-	margin:-2px;
-	position: relative;
-	top:-7px;
-}
-
-#avatar{
-	margin:-2px;
-	position: relative;
-	top:-8px;
-}
-
-#box{
-	position: relative;
-	top:-60px;
-	left: 140px;
-	width: 632px;
-	height: 44px;
-	border: 1px solid lightgrey;
-	box-shadow: 2px 2px 5px grey;
-	min-width: 484px;
-}
-
-input{
-	-webkit-appearance: textfield;
-    background-color: white;
-    -webkit-rtl-ordering: logical;
-    cursor: auto;
-    border: none;
-}
-
-#mic{
-	
-	position: relative;
-	left: 85px;
-
-}
-
-#magnify-glass{
-	position: relative;
-	left:85px; 
-}
-
-#search{
-  position: relative;
-  top:-8px;
-  width: 448px;
-  height: 42px;
-  font-size: 25px;
-  
-}
-
-ul{
-	list-style-type: none;
-	margin: 0;
-    padding: 0;
-}
-
-li {
-	display: inline;
-	width: 60px;
-	}
-
-li a:link {
-    color: #666;
-    text-decoration: none;
-}
-
-
-li a:hover {
-    opacity: .85;
-    text-decoration: none;
-    text-decoration-style: initial;
-    text-decoration-color: initial;
-}
-
-#tools:hover{
-    border: 1px solid #777;
-    border-radius: 2px;
-    cursor: pointer;
-    margin-left: -1px;
-    padding: 4px 15px;
-    box-shadow: 0 3px 7px 0 rgba(0,0,0,0.24), 0 5px 10px 0 rgba(0,0,0,0.19);
-     background: linear-gradient(#e4e4e4, #f0f0f0)
-}
-
-
-#settings{
-    margin-left: 80px;
-}
-
-
-
-.nav-tabs{
-    height: 15px;
-    line-height: 15px;
-    padding: 28px 16px 12px;
-
-}
-
-#active{
-
-	border-bottom: 3px solid #4285f4;
-	color: #4285f4;
-    font-weight: bold;
-    height: 15px;
-    line-height: 15px;
-    padding: 28px 16px 12px;
-}
-
-#how-many{
-     color: #666;
-     margin-left: 155px;
-     font-size: 13px;
-}
-
-.results{
-    margin-left: 155px;
-    width: 642px;
-
-}
-.blue-heading{
-	font-weight: normal;
-	font-size: 18px;
-}
-
-.blue-heading a:link{
-    color:#1a0dab;
-    text-decoration: none;
-    font-weight: normal;
-}
-
-.blue-heading a:hover{
-    color:#1a0dab;
-    text-decoration: underline;
-    font-weight: normal;
-
-}
-
-.blue-heading a:active{
-	 color: red
-	 text-decoration: underline;
-	 font-weight: normal;
-
-}
-
-.blue-heading a:visited{
-    color: #609;
-    text-decoration: underline;
-    font-weight: normal;
-}
-
-.green-text{
-	color:#006621;
-	padding: -15px;
-	margin-top: -20px;
-	font-size: 15px;
-}
-
-.add-img{
-	margin: 2px 0 -5px 0;
-}
-
-.results-body{
-	color: #545454;
-	line-height: 18px;
-	font-size: small;
-
-}
-
-.results-body p{
-
-	padding: -15px;
-	margin-top: -15px;
-}
-
-.little-links{
-    padding: -12px;
-	margin-top: -12px;
-
-}
-
-
-.blue-links:link {
-    color:#1a0dab;
-    text-decoration: none;
-}
-
-
-.blue-links:hover {
-	color:#1a0dab;
-    text-decoration: underline;
-}
-
-.blue-links:active{
-	 color: red
-	 text-decoration: underline;
-
-}
-
-.blue-links:visited{
-    color: #609;
-    text-decoration: underline;
-
-}
-
-.last-result{
-     margin-left:155px; 
-     width: 642px; 
-
-}
-
-.lower-left{
-    display: inline;
-    width: 300px;
-}
-
-.lower-right{
-
-	display: inline;
-	width: 300px;
-	position:relative;
-	left: 320px;
-	top: -136px;
-}
-
-#goooogle{
-	width: 450px;
-	position: relative;
-	left:150px; 
-	top: -120px;
-
-}
-
-.goolink{
-   margin-right:10px;
-}
-
-#next{
-  margin-left: 25px;
-
-}
-
-.numbers{
-    font-size: small;
-	margin-left: 55px;
-}
-
-textarea:focus,{
-    outline: none;
-}
-
-footer{
-    width: 980px;
-    
-
-}
-
-#top-bar{
-  background-color: #f2f2f2;
-  border-top: 1px solid #e4e4e4;
-  line-height: 40px;
-  width: 132.5%;
-  margin:0 auto;
-  position: relative;
-  top:422px;
-
-}
-
-#bottom-bar{
-  background-color: #f2f2f2;
-  border-top: 1px solid #e4e4e4;
-  line-height: 40px;
-  width: 132.5%;
-  margin:0 auto;
-  position: relative;
-  top:422px;
-  font-size: 15px;
-
-}
-
-.foot-text{
-
-	margin-left: 30px;
-}
-
-.bottom-links{
-  margin-right: 20px;
-  
-
-}
-
-.bottom-links a:link{
-    color: #666;
-    text-decoration: none;
-}
-
-
-.bottom-links a:hover {
-    color: #666;
-    text-decoration: underline;
-}
-
-footer a:link {
-    color: #666;
-    text-decoration: none;
-}
-
-
-footer a:hover {
-    opacity: .85;
-    text-decoration: underline;
-    text-decoration-line: underline;
-    text-decoration-style: initial;
-    text-decoration-color: initial;
-}
-
-.bottom-right{
-	position: relative;
-	left: 700px;
-
-}
-
-	</style>
-
-
-
-
 </head>
 
 <body>
 
-<div class="wrapper">
+  <div class="wrapper">
 
 <header>
 
 
   <nav>
 
-  <img src="images/little-logo.png" id="little-logo">
+    <img src="images/little-logo.png" id="little-logo">
 
-<div id="box"> 
-  	<form>
-     <input type="text" name="search" title="search" id="search">
-     <input type="image" src="images/mic.png" alt="Submit" id="mic">
-      <input type="image" src="images/magnify-glass.png" alt="Submit" id="magnify-glass">
-    </form>
-  	</div>
+     <div id="box"> 
+  	  <form>
+       <input type="text" name="search" title="search" id="search">
+       <input type="image" src="images/mic.png" alt="Submit" id="mic">
+        <input type="image" src="images/magnify-glass.png" alt="Submit" id="magnify-glass">
+      </form>
+  	 </div>
 
   	<div id="right-nav">
 
@@ -447,198 +42,222 @@ footer a:hover {
 
     	<ul>
 
-    		<li> <a id="active" href="#">All</a></li>
+    		  <li> <a id="active" href="#">All</a></li>
 
-    		<li> <a class="nav-tabs" href="/search?q=build+this+webpage&dcr=0&source=lnms&tbm=vid&sa=X&ved=0ahUKEwjEsof5m5fYAhXLoZQKHTLAAu0Q_AUICigB">Videos</a></li>
+    		  <li> <a class="nav-tabs" href="/search?q=build+this+webpage&dcr=0&source=lnms&tbm=vid&sa=X&ved=0ahUKEwjEsof5m5fYAhXLoZQKHTLAAu0Q_AUICigB">Videos</a></li>
 
-    		<li> <a  class="nav-tabs" href="/search?q=build+this+webpage&dcr=0&source=lnms&tbm=shop&sa=X&ved=0ahUKEwjEsof5m5fYAhXLoZQKHTLAAu0Q_AUICygC">Shopping</a></li>
+    		  <li> <a  class="nav-tabs" href="/search?q=build+this+webpage&dcr=0&source=lnms&tbm=shop&sa=X&ved=0ahUKEwjEsof5m5fYAhXLoZQKHTLAAu0Q_AUICygC">Shopping</a></li>
 
-    		<li> <a  class="nav-tabs" href="/search?q=build+this+webpage&dcr=0&source=lnms&tbm=nws&sa=X&ved=0ahUKEwjEsof5m5fYAhXLoZQKHTLAAu0Q_AUIDCgD">News</a></li>
+    		  <li> <a  class="nav-tabs" href="/search?q=build+this+webpage&dcr=0&source=lnms&tbm=nws&sa=X&ved=0ahUKEwjEsof5m5fYAhXLoZQKHTLAAu0Q_AUIDCgD">News</a></li>
 
-    		<li> <a class="nav-tabs"  href="https://maps.google.com.au/maps?q=build+this+webpage&gws_rd=cr&dcr=0&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjEsof5m5fYAhXLoZQKHTLAAu0Q_AUIDSgE">Maps</a></li>
+    		  <li> <a class="nav-tabs"  href="https://maps.google.com.au/maps?q=build+this+webpage&gws_rd=cr&dcr=0&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjEsof5m5fYAhXLoZQKHTLAAu0Q_AUIDSgE">Maps</a></li>
 
-    		<li> <a class="nav-tabs"  href="#">More</a></li>
+    		  <li> <a class="nav-tabs"  href="#">More</a></li>
 
-    		<li> <a id="settings" class="nav-tabs" href="#">Settings</a></li>
+    		  <li> <a id="settings" class="nav-tabs" href="#">Settings</a></li>
 
-    		<li> <a class="nav-tabs"  id="tools" href="#" >Tools</a></li>
+    		  <li> <a class="nav-tabs"  id="tools" href="#" >Tools</a></li>
 
-    	</ul>
+    	  </ul>
 
 
-    </div>  
+      </div>  
 
-  </nav>
+   </nav>
 
 </header>
 
 <section>
   <div id="how-many">
+
   	<p>About 1,950,000 results (0.51 seconds)</p>
+
   </div>
 
-<div class="results">
-  <div class="blue-heading">
-<a href="www.wix.com/build/a-website"><h3>Build a Website - Make a Free Professional Site - wix.com</h3> </a>  	
-  </div>
-  <div class="green-text">
+  <div class="results">
+
+    <div class="blue-heading">
+
+     <a href="www.wix.com/build/a-website"><h3>Build a Website - Make a Free Professional Site - wix.com</h3> </a>  
+
+    </div>
+
+    <div class="green-text">
+
    <p> <img class="add-img" src="images/add.png">www.wix.com/build/a-website <img src="images/mini-arrow.png"> </p>
-  </div>
+    </div>
 
-  <div class="results-body">
-  	<p>Instantly Make Your <strong>Website </strong> Today</p>
-  	<p>Traffic generation tools - Market leaders - Free multilingual fonts · Easy drag n’ drop · Easy-to-add blog
+    <div class="results-body">
+  	  <p>Instantly Make Your <strong>Website </strong> Today</p>
+  	  <p>Traffic generation tools - Market leaders - Free multilingual fonts · Easy drag n’ drop · Easy-to-add blog
 Services: App Market, SEO Wizard, Mailboxes, Blog, Online Stores</p>
 
-   <div class="little-links"></div>
+     
 
-<ul>
-	<li><a class="blue-links" href="#"> Customise Easily</a> -</li>
-	<li><a class="blue-links" href="#">Free Website Builder</a> -</li>
-	<li><a class="blue-links" href="#">Professional Website</a> -</li>
-	<li><a class="blue-links" href="#">Online Store Builder</a> -</li>
-	<li><a class="blue-links" href="#">Free Hosting</a></li>
-</ul>
+      <ul>
+	      <li><a class="blue-links" href="#"> Customise Easily</a> -</li>
+		  <li><a class="blue-links" href="#">Free Website Builder</a> -</li>
+		  <li><a class="blue-links" href="#">Professional Website</a> -</li>
+		  <li><a class="blue-links" href="#">Online Store Builder</a> -</li>
+		  <li><a class="blue-links" href="#">Free Hosting</a></li>
+     </ul>
     
     </div>
 
-</div> 
+  </div> 
 
-<div class="results">
-  <div class="blue-heading">
-<a href="www.weebly.com/build-website‎"><h3>Website Making Tools - Weebly.com (Recommended)‎</h3> </a>  	
-  </div>
-  <div class="green-text">
-   <p> <img class="add-img" src="images/add.png">www.weebly.com/build-website‎ <img src="images/mini-arrow.png"> </p>
-  </div>
+  <div class="results"> 
 
-  <div class="results-body">
-  	<p>Customizable Templates for Unique Sites. Subscribe For a 1 Year Free Domain!</p>
-  	<p>40 Million+ Sites Started · No Coding Required · Personalized Domain · Premium Customer Support
+    <div class="blue-heading">
+      <a href="www.weebly.com/build-website‎"><h3>Website Making Tools - Weebly.com (Recommended)‎</h3> </a>  	
+    </div>
+
+    <div class="green-text">
+     <p> <img class="add-img" src="images/add.png">www.weebly.com/build-website‎ <img src="images/mini-arrow.png"> </p>
+    </div>
+
+    <div class="results-body">
+  	  <p>Customizable Templates for Unique Sites. Subscribe For a 1 Year Free Domain!</p>
+  	  <p>40 Million+ Sites Started · No Coding Required · Personalized Domain · Premium Customer Support
 Types: Modern Websites, Professional Websites, Responsive Websites, Themed Websites, Robust Webs</p>
 
    <div class="little-links">
 
-<ul>
-	<li><a class="blue-links" href="#"> Website Builder</a> -</li>
-	<li><a class="blue-links" href="#">Website Features</a> -</li>
-	<li><a class="blue-links" href="#">Beautiful Themes</a> -</li>
-	<li><a class="blue-links" href="#">100% Happiness Guarantee</a> </li>
+	<ul>
+		<li><a class="blue-links" href="#"> Website Builder</a> -</li>
+		<li><a class="blue-links" href="#">Website Features</a> -</li>
+		<li><a class="blue-links" href="#">Beautiful Themes</a> -</li>
+		<li><a class="blue-links" href="#">100% Happiness Guarantee</a> </li>
 	
-</ul>
-    </div>
+	</ul>
+     </div>
     </div>
 
-</div> 
+  </div> 
 
-<div class="results">
-  <div class="blue-heading">
-<a href="https://arstechnica.com/.../with-zero-coding-experience-artist-building-180-webpages"><h3>With zero coding experience, artist building 180 webpages in 180 days</h3> </a>  	
-  </div>
-  <div class="green-text">
-   <p> https://arstechnica.com/.../with-zero-coding-experience-artist-building-180-webpages-... <img src="images/mini-arrow.png"> </p>
-  </div>
+  <div class="results">
+
+    <div class="blue-heading">
+    
+      <a href="https://arstechnica.com/.../with-zero-coding-experience-artist-building-180-webpages"><h3>With zero coding experience, artist building 180 webpages in 180 days</h3> </a>  	
+    </div>
+
+     <div class="green-text">
+     <p> https://arstechnica.com/.../with-zero-coding-experience-artist-building-180-webpages-... <img src="images/mini-arrow.png"> </p>
+    </div>
 
   <div class="results-body">
   	<p>With zero coding experience, artist <strong>building</strong> 180 <strong>webpages </strong> in 180 days. "Learning by doing" is taken to the extreme by novice programmer. Jon Brodkin - 7/26/2013, 11:00 AM. One of Jennifer Dewalt's creations, this <strong>webpage </strong> lets visitors <strong>create </strong>paintings in the style of Piet Mondriaan. Jennifer Dewalt · reader comments.</p>
   	
+   </div>
+
+  </div> 
+
+  <div class="results">
+
+    <div class="blue-heading">
+       <a href="swatikumar16.github.io/google-homepage/"><h3>Google Homepage</h3> </a>  	
     </div>
 
-</div> 
-
-<div class="results">
-  <div class="blue-heading">
-<a href="swatikumar16.github.io/google-homepage/"><h3>Google Homepage</h3> </a>  	
-  </div>
-  <div class="green-text">
+     <div class="green-text">
    <p> swatikumar16.github.io/google-homepage/ <img src="images/mini-arrow.png"> </p>
-  </div>
+     </div>
 
   <div class="results-body">
   	<p>With zero coding experience, artist building 180 webpages ... arstechnica.com/.../with-zero-coding-experience-artist-build... Ars Technica. Jul 26, 2013 - 117 days ago, having never done any programming in her life, Jennifer Dewalt built her first webpage. The next day, she built another, and she .</p>
   	
+  </div>
+
+  </div> 
+
+  <div class="results">
+
+    <div class="blue-heading">
+      <a href="https://aryavansh.github.io/googleresults/"><h3>build this webpage - Google Search</h3> </a>  	
     </div>
 
-</div> 
+    <div class="green-text">
+       <p> https://aryavansh.github.io/googleresults/<img src="images/mini-arrow.png"> </p>
+    </div>
 
-<div class="results">
-  <div class="blue-heading">
-<a href="https://aryavansh.github.io/googleresults/"><h3>build this webpage - Google Search</h3> </a>  	
-  </div>
-  <div class="green-text">
-   <p> https://aryavansh.github.io/googleresults/<img src="images/mini-arrow.png"> </p>
-  </div>
-
-  <div class="results-body">
-  	<p>117 days ago, having never done any programming in her life, Jennifer Dewalt built her first webpage. The next day, she built another, and she ... I'm learning to code by building 180 websites in 180 ... - Jennifer Dewalt. blog.jenniferdewalt.com/post/.../im-learning-to-code-by-building-180-websites-in. Jul 24, 2013 -. Build a ...</p>
+    <div class="results-body">
+  	  <p>117 days ago, having never done any programming in her life, Jennifer Dewalt built her first webpage. The next day, she built another, and she ... I'm learning to code by building 180 websites in 180 ... - Jennifer Dewalt. blog.jenniferdewalt.com/post/.../im-learning-to-code-by-building-180-websites-in. Jul 24, 2013 -. Build a ...</p>
   	
     </div>
 
-</div> 
+  </div> 
 
 
-<div class="results">
-  <div class="blue-heading">
-<a href="https://benjdelt.github.io/google-results/"><h3>build this webpage</h3> </a>  	
-  </div>
-  <div class="green-text">
-   <p> https://benjdelt.github.io/google-results/<img src="images/mini-arrow.png"> </p>
-  </div>
+  <div class="results">
 
-  <div class="results-body">
+    <div class="blue-heading">
+       <a href="https://benjdelt.github.io/google-results/"><h3>build this webpage</h3> </a>  	
+    </div>
+
+    <div class="green-text">
+      <p> https://benjdelt.github.io/google-results/<img src="images/mini-arrow.png"> </p>
+    </div>
+  
+    <div class="results-body">
   	<p>Google Homepage swatikumar16.github.io/google-homepage/. Jul 26, 2013 - 117 days ago, having never done any programming in her life, Jennifer Dewalt built her first webpage. The next day, she built another, and she . build this webpage - Google Search https://aryavansh.github.io/googleresults. 117 days ago, having ...</p>
   	
     </div>
 
-</div> 
+  </div> 
 
-<div class="results">
-  <div class="blue-heading">
-<a href="blog.jenniferdewalt.com/post/.../im-learning-to-code-by-building-180-websites-in"><h3>Learning to Code By Building A Website a Day - Jennifer Dewalt</h3> </a>  	
-  </div>
-  <div class="green-text">
-   <p> blog.jenniferdewalt.com/post/.../im-learning-to-code-by-building-180-websites-in<img src="images/mini-arrow.png"> </p>
-  </div>
+  <div class="results">
 
-  <div class="results-body">
-  	<p>Jul 24, 2013 - A little over 4 months ago, I decided I was going to learn to code. Ignoring the fact that I had no prior coding experience and had never taken any “technical” classes in school, I decided to build 180 websites in 180 days with no days off. Today is Day 115. Background. My background is in art. The thing that ...</p>
+    <div class="blue-heading">
+      <a href="blog.jenniferdewalt.com/post/.../im-learning-to-code-by-building-180-websites-in"><h3>Learning to Code By Building A Website a Day - Jennifer Dewalt</h3> </a>  	
+    </div>
+
+    <div class="green-text">
+     <p> blog.jenniferdewalt.com/post/.../im-learning-to-code-by-building-180-websites-in<img src="images/mini-arrow.png"> </p>
+    </div>
+
+    <div class="results-body">
+  	  <p>Jul 24, 2013 - A little over 4 months ago, I decided I was going to learn to code. Ignoring the fact that I had no prior coding experience and had never taken any “technical” classes in school, I decided to build 180 websites in 180 days with no days off. Today is Day 115. Background. My background is in art. The thing that ...</p>
   	
     </div>
 
-</div> 
+  </div> 
 
-<div class="results">
-  <div class="blue-heading">
+  <div class="results">
+
+    <div class="blue-heading">
 <a href="https://jenniferdewalt.com/"><h3>Jennifer Dewalt | 180 Websites</h3> </a>  	
-  </div>
-  <div class="green-text">
+    </div>
+
+    <div class="green-text">
    <p> https://jenniferdewalt.com/<img src="images/mini-arrow.png"> </p>
-  </div>
+    </div>
 
-  <div class="results-body">
-  	<p>I'm Jennifer Dewalt and I am making. 180 websites in 180 days. You can follow the project here and on the blog. Today's Website. Hello World! Day 180 Hello World! Day 179 All Draw. Day 178 How We're Feeling. Day 177 One .... Day 18 Building Blocks. Day 17 Party Time? Day 16 Caterpillar. Day 15 Dropping Boxes.</p>
+    <div class="results-body">
+  	  <p>I'm Jennifer Dewalt and I am making. 180 websites in 180 days. You can follow the project here and on the blog. Today's Website. Hello World! Day 180 Hello World! Day 179 All Draw. Day 178 How We're Feeling. Day 177 One .... Day 18 Building Blocks. Day 17 Party Time? Day 16 Caterpillar. Day 15 Dropping Boxes.</p>
   	
     </div>
 
-</div> 
+  </div> 
 
 
-<div class="results">
-  <div class="blue-heading">
-<a href="https://www.squarespace.com/
+  <div class="results">
+
+    <div class="blue-heading">
+      <a href="https://www.squarespace.com/
 "><h3>Squarespace: Build a Website</h3> </a>  	
-  </div>
-  <div class="green-text">
-   <p> https://www.squarespace.com/
-<img src="images/mini-arrow.png"> </p>
-  </div>
+    </div>
 
-  <div class="results-body">
-  	<p>Squarespace is the all-in-one solution for anyone looking to create a beautiful website. Domains, eCommerce, hosting, galleries, analytics, and 24/7 support all included.</p>
+    <div class="green-text">
+     <p> https://www.squarespace.com/
+      <img src="images/mini-arrow.png"> </p>
+    </div>
+
+    <div class="results-body">
+  	  <p>Squarespace is the all-in-one solution for anyone looking to create a beautiful website. Domains, eCommerce, hosting, galleries, analytics, and 24/7 support all included.</p>
   	
     </div>
 
-</div> 
+  </div> 
 
 <div class="results">
   <div class="blue-heading">
@@ -758,23 +377,18 @@ Types: Modern Websites, Professional Websites, Responsive Websites, Themed Websi
   <div id="bottom-bar">
   	<span class="foot-text">
 
-  	<a class="bottom-links" href="/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiW1vXdmpLYAhVLybwKHd2_CKoQkdQCCAs&url=https%3A%2F%2Fwww.google.com.au%2Fintl%2Fen_au%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw05oraazITREqwqthkZ8Bgf" >Advertising</a>
+  	<a class="bottom-links" href="//support.google.com/websearch/?p=ws_results_help&amp;hl=en-AU&amp;fg=1">Help</a> 
 
-  	 <a class="bottom-links" href="https://www.google.com.au/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+  	<a class="bottom-links" href="#"> Send feedback</a>	
 
-  	 <a class="bottom-links" href="https://www.google.com.au/intl/en_au/about/?utm_source=google.com&utm_medium=referral&utm_campaign=hp-footer&fg=1"> About</a>
+  	 <a class="bottom-links" href="//www.google.com.au/intl/en_au/policies/privacy/?fg=1">Privacy</a>
 
-  	 </span>
+  	 <a class="bottom-links" href="//www.google.com.au/intl/en_au/policies/terms/?fg=1">Terms</a>
 
-  	 <span class="bottom-right"> 
-
-  	 	<a class="bottom-links" href="//www.google.com.au/intl/en_au/policies/privacy/?fg=1">Privacy</a>
-           
-  	 	<a class="bottom-links" href="//www.google.com.au/intl/en_au/policies/terms/?fg=1">Terms</a>
-
-  	 	<a class="bottom-links" href="//www.google.com.au/intl/en_au/policies/privacy/?fg=1"> Settings</a>
 
   	 </span>
+
+  	 
   </div>
   	
   </footer>
